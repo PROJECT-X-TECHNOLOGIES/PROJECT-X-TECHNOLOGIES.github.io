@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project X | Homepage</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="/assets/icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <h1 class="company-title">Project X</h1>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#" id="contactButton">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>About Us</h2>
+        <div class="about-section">
+            <div class="about-text">
+                <p>Newly created startup , <br>
+                    Currently Enggaged In <br>
+                    Grocceries Delivery Startup.</p>
+            </div>
+            <div class="about-image">
+                <img src="/assets/image.jpg" alt="About Image">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Founders</h2>
+        <div class="founder-container">
+            <div class="founder-card">
+                <img class="founder-image" src="/assets/kuntal.jpg" alt="Founder 1">
+                <h3 class="founder-name">Kuntal Gain</h3>
+                <p class="founder-qualification">
+                    CTO <br>
+                    (Programming & Design) <br>
+                    3rd Year CSE in <br> B.Tech
+                </p>
+            </div>
+            <div class="founder-card">
+                <img class="founder-image" src="/assets/Nilajit.jpg" alt="Founder 2">
+                <h3 class="founder-name">Nilajit Roy</h3>
+                <p class="founder-qualification">
+                    CEO <br>
+                    (Cheif Executive Officer) <br>
+                    2nd Year EE in <br> B.Tech</p>
+            </div>
+            <div class="founder-card">
+                <img class="founder-image" src="assets/Sahil.jpg" alt="Founder 3">
+                <h3 class="founder-name">Sahil Chakraborty</h3>
+                <p class="founder-qualification">
+                    CFO <br>
+                    (Finance & Money Management) <br>
+                    CA Foundation
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="contactForm">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" required>
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required></textarea>
+                <button type="submit" onclick="sendEmail()">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2023 Project X. All rights reserved.
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

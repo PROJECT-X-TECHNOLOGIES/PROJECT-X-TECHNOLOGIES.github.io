@@ -1,0 +1,239 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+    padding: 5px 20px;
+    transition: padding 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    padding: 5px 25px;
+}
+
+
+
+.container {
+    padding: 20px;
+}
+
+/* styles.css */
+/* Rest of the CSS code */
+
+.about-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 10px 50px;
+}
+
+/* styles.css */
+/* Rest of the CSS code */
+
+.about-text {
+    flex: 1;
+    font-family: 'Pacifico', cursive;
+}
+/* Mobile screen */
+@media (max-width: 768px) {
+    .about-text p {
+        font-size: 22px;
+        line-height: 1.5;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight: bold;
+        
+    }
+    
+
+}
+
+/* Desktop Screen */
+@media (min-width: 769px) {
+    .about-text p {
+        font-size: 30px;
+        line-height: 1.5;
+        color: #333;
+        margin-bottom: 10px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-text p strong {
+    font-weight: bold;
+}
+
+.about-text p em {
+    font-style: italic;
+}
+
+
+.about-image {
+    flex: 0 0 auto;
+    margin-left: 20px;
+    max-width: 300px;
+}
+
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+
+
+.founder-container {
+    display: flex;
+    justify-content: center;
+}
+
+.founder-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.founder-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.founder-name {
+    margin-bottom: 5px;
+}
+
+.founder-qualification {
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#contactForm label,
+#contactForm input,
+#contactForm textarea,
+#contactForm button {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#contactForm label {
+    font-weight: bold;
+}
+
+#contactForm input[type="text"],
+#contactForm textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+}
+
+#contactForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #45a049;
+}
